@@ -37,6 +37,7 @@ done()
 
 # Расстановка точек на плоскости
 up()
+m = 1
 for x in range(-10, 20):
     for y in range(-20, 10):
         goto(x * m, y * m)
