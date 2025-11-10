@@ -48,3 +48,18 @@ print(int(bin_n, 2))
 print(int(oct_n, 8))
 print(int(tri_n, 3))
 #from another to decimal#from another to decimal#from another to decimal#
+
+#sum of digits in number#sum of digits in number#sum of digits in number#
+#bin number
+r_1 = "101"
+sum_1 = r_1.count("1")
+
+# in any system k <= 10
+r_2 = "198"
+sum_2 = sum(map(int, r_2))
+
+# in any system k <= 10
+r_3 = "AF7"
+sum_3 = sum(map(lambda x: int(x, 36), r_3))
+
+#sum of digits in number#sum of digits in number#sum of digits in number#
