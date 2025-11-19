@@ -19,11 +19,13 @@ for i in "AE":
 for i in "BCDF":
     s = s.replace(i, "B")
 
+while "AB" in s:
+    s = s.replace("AB", "A B")
+
+s = s.split()
+
 M = 0
-for i in range(len(s)):
-    for j in range(i, len(s)):
-        if s[i:j].count("AB") <= 130:
-            M = max(M, len(s[i:j]))
-        else:
-            break
+for i in range(len(s) - 130):
+    a = sum(map(len, s[i: i + 131]))
+    M = max(M, a)
 print(M)
