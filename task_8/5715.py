@@ -1,5 +1,3 @@
-from itertools import *
-
 alph = ["cookie", "candy", "bar", "nothing"]
 
 def t(s):
@@ -8,8 +6,12 @@ def t(s):
 
 cnt = 0
 
-for s in set(product(alph, repeat=15)):
-    if t(s): cnt += 1
-    if cnt % 10 == 0: print(cnt)
+for cookie in range(0,15):
+    for candy in range(0,15):
+        for bar in range(0,15):
+            s =  "cookie " * cookie + "candy " * candy + "bar " * bar
+            s = s.split()
+            if len(s) <= 15 and t(s):
+                cnt += 1
 
 print(cnt)
