@@ -8,7 +8,7 @@ def t(s):
 
 cnt = 0
 
-for s in set(product(alph, repeat=15)):
+for s in set(map(lambda x: tuple(sorted(list(x))), product(alph, repeat=15))):
     if t(s): cnt += 1
     if cnt % 10 == 0: print(cnt)
 
