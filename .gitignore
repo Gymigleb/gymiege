@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 .git
 .txt
 .gitignore
+=======
+/.venv/
+/.idea/
+*.txt
+test.py
+>>>>>>> e95c567a98cfd6e8e9c17ae14affb38c6c2a19df
