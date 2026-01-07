@@ -2,7 +2,9 @@ from turtle import *
 
 tracer(0)
 
-sc = 5
+screensize(4000, 4000)
+
+sc = 10
 
 forward(30*sc)
 left(60)
@@ -34,5 +36,6 @@ for x in range(-50,50):
     for y in range(-50, 50):
         goto(x*sc,y*sc)
         dot(3,"red")
+print((7-1) + (11-1) + (22-1) + (7-1) * 2)
 update()
 done()
