@@ -1,0 +1,19 @@
+from itertools import *
+
+def f(x):
+    p = 12 <= x <= 26
+    q = 30 <= x <= 53
+    a = a1 <= x <= a2
+    return (a <= p) or q
+
+line = [x + eps for x in range(12, 54) for eps in (0, 0.1, 0.9)]
+print(line)
+
+ans = []
+
+for a1, a2 in combinations(line, 2):
+    if all(f(x) for x in line):
+        print(a1, a2, a2 - a1)
+        ans.append(a2 - a1)
+
+print(max(ans))
