@@ -14,7 +14,7 @@ for i in product("abc", repeat=8):
     i = "".join(i)
     a = f(i)
     if 1000 <= a <= 1024:
-        ans |= set([a])
+        ans |= {a}
 
 print(ans)
 print(len(ans))
