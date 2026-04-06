@@ -26,7 +26,7 @@ for x in range(-50, 50):
         goto(sc*x, sc*y)
         dot(3, "red")
 
-print(11*11 + 11*13 - 2*8*6)
+print(11*11 + 11*13 - 8*6)
 
 update()
 done()

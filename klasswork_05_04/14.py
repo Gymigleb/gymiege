@@ -1,8 +1,8 @@
 def f(n):
     out = ""
     while n:
-        out += str(n%39)
-        n //= 39
+        out += str(n%39) # puppupupupu
+        n //= 39 # puppupupupu
     return out[::-1] if len(out) != 0 else "0"
 
 M = 0

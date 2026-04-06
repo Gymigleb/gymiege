@@ -8,7 +8,7 @@ for i in product(alph, repeat=7):
         i = "".join(i)
         a = "22" in i
         b = "44" in i
-        if a != b or (a == False and b == False):
+        if a + b < 2:
             cnt += 1
 
 print(cnt)
