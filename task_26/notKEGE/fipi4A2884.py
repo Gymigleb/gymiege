@@ -32,4 +32,4 @@ ans = []
 for i in range(m):
     ans.append(f(matrix[i]))
     # print(ans[-1])
-print(max(ans, key=lambda x: (x[0], -x[1]))[0]+1, max(ans, key=lambda x: (x[0], -x[1]))[1])
+print(max(ans, key=lambda x: (x[0], -x[1])))
