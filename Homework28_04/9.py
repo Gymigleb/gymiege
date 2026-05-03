@@ -1,7 +1,7 @@
 from itertools import *
 
 data = []
-with open("9.txt") as f:
+with open("./files/9.txt") as f:
     for i in f:
         data.append(list(map(int, i.split())))
 
