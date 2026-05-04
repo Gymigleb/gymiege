@@ -26,3 +26,16 @@ while r <= len(s):
 
 ans.append(s[l:r+1])
 print(len(max(ans, key=len)))
+
+from re import *
+with open("./files/24_1975.txt") as f:
+    s = f.readline().strip()
+
+# s = "aPPaaaaa"
+
+pat = r"[^P]*(P[^P]+)*P?"
+
+m = finditer(pat, s)
+arr = [i.group() for i in m]
+
+print(len(max(arr, key=len)))

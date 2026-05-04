@@ -1,7 +1,7 @@
 with open("./files/24_2942.txt") as f:
     s = f.readline().strip()
 
-s = "AACCBABCACACABBBBBACACACACACABAB"
+# s = "AACCBABCACACABBBBBACACACACACABAB"
 s = " " + s + " "
 
 for i in range(2):
@@ -23,7 +23,7 @@ print(len(max(s, key=len))/2)
 with open("./files/24_2942.txt") as f:
     s = f.readline().strip()
 
-s = "AACCBABCACACABBBBBACACACACACABAB"
+# s = "AACCBABCACACABBBBBACACACACACABAB"
 
 l = 0
 r = 0
@@ -38,3 +38,15 @@ while r < len(s):
         r = l
 ans.append(s[l:r])
 print(len(max(ans, key=len))/2)
+
+
+from re import *
+with open("./files/24_2942.txt") as f:
+    s = f.readline().strip()
+
+pat = r"(A[BC])+"
+
+m = finditer(pat, s)
+arr = [i.group() for i in m]
+
+print(len(max(arr, key=len))/2)
