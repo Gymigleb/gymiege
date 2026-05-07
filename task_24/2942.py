@@ -50,3 +50,22 @@ m = finditer(pat, s)
 arr = [i.group() for i in m]
 
 print(len(max(arr, key=len))/2)
+
+
+with open("./files/24_2942.txt") as f:
+    s = f.readline().strip()
+
+i = 0
+cnt = 0
+ans = 0
+while i < len(s) - 1:
+    if s[i: i+2] in "AB AC":
+        cnt += 1
+        i += 2
+    else:
+        ans = max(ans, cnt)
+        cnt = 0
+        i += 1
+
+ans = max(ans, cnt)
+print(ans)

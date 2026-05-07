@@ -1,4 +1,4 @@
-f = open("24_25361.txt")
+f = open("./files/24_25361.txt")
 
 s = f.readline()
 
