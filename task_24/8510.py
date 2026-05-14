@@ -1,4 +1,4 @@
-with open("24_8510.txt") as f:
+with open("./files/24_8510.txt") as f:
     s = f.readline().strip()
 
 s = s.replace("N", "*").replace("O", "*").replace("P", "*")
